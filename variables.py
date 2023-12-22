@@ -1,7 +1,5 @@
 #an example of functions. Although it's not perfect, please inference from it.
 
-
-
 print("Hello, welcome!")
 
 name = input("What's your name?\n")
@@ -37,9 +35,20 @@ elif real_age <= 13:
 menu = "food\nwater\nbread\n"
 print(f"{name}, here we have some options for you. We have:\n{menu}")
 
-price = 100
+
 
 f = input("What do you desire out of our menu?\n")
+
+if f == "bread":
+    price = 20
+elif f == "water":
+    price = 5
+elif f == "food":
+    price = 10
+
+else:
+    print("You incorrectly entered an option that wasn't in our prompt. Please restart the shell, or face the exit command.")
+    exit()
 
 quantity = input("How much of your specified order do you want?\n")
 
@@ -59,7 +68,15 @@ t = "Totally not an establishment.\n"
 
 if maybe == "no":
     print(f"Alright, + {name}, you can leave our establishment now. Have a great rest of your day.\n")
+    print(f"Hey {name}, before you go, we are going to popup you with our website!\n")
+    import os
+    os.system("open \"\" https://sites.google.com/view/who-is-water")
+
+    
     exit()
 if maybe == "yes":
     print(len(name))
+    print("Hey {name}, before you go, we are going to popup you with our website!\n")
+    import os
+    os.system("open \"\" https://sites.google.com/view/who-is-water")
     exit()
