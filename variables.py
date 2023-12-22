@@ -4,7 +4,7 @@ print("Hello, welcome!")
 
 name = input("What's your name?\n")
 
-if name == "Ankur Jain":
+if name == "Never Gonna Give You Up":
     test = input("Are you evil or no?\n")
     if test == "yes":
         print("You are a banned user from our area. Please proceed to the exit!")
